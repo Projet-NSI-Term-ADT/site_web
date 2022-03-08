@@ -1,0 +1,22 @@
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Avancé</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Selon votre activité</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Selon le classement...</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">de la semaine</a></li>
+                      <li><a href="#">du mois</a></li>
+                      <li><a href="#">de tous les temps</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Par catégorie</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Jeux de société</a></li>
+                      <li><a href="#">Jeux de tir</a></li>
+                      <li><a href="#">Jeux de course</a></li>
+                      <li><a href="#">Jeux pour enfants</a></li>
+                      <li><a href="#">Jeux de réflexion</a></li>
+                    </ul>
+                  </li>
+				  <li><a href="#">Notre sélection</a></li>
+                </ul>
+              </li>

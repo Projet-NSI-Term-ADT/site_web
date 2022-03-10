@@ -67,18 +67,37 @@
             <div class="row">
               <div class="col-sm-8">
                 <div class="post">
-                  <div class="post-thumbnail"><img src="assets/images/post-4.jpg" alt="Blog Featured Image"/></div>
-                  <div class="post-header font-alt">
-                    <h1 class="post-title">$game$ | $version$</h1>
-                    <div class="post-meta">Par <a href="#">$dev$</a> | $date$ | $comment$ commentaires
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>$description$</p>
+				<div class="post-header font-alt">
+					<section>
+						<div class="post-thumbnail"><img src="assets/images/post-4.jpg" alt="Blog Featured Image"/></div>
+						<div><i class="fa fa-fw"></i><i class="fa fa-fw"></i><i class="fa fa-fw"></i><i class="fa fa-fw"></i><i class="fa fa-fw"></i></div>
+						<div><h1>Description :</h1><p>$description$</p></div>
+					</section>
+					<section>
+						<h1 class="post-title">$game$</h1>
+						<div class="post-meta"><a href="#">$dev$</a> | $date_publi$ | $date_maj$</div>
+						<div class="post-meta">Version actuelle : $version_jeu$</div>
+						<button class="btn btn-b btn-round" type="telecharger">Télécharger</button>
+						<div class="panel-heading">
+							<h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support1" aria-expanded="false" class="collapsed">Version anterieur :</a></h4>
+						</div>
+                    <div class="panel-collapse collapse" id="support1" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">$version_jeu_anterieur$
+					  </div>
+					</div>
                   </div>
                 </div>
+				<div class="comment-form">
+                  <h4 class="comment-form-title font-alt">Poster un avis</h4>
+                  <form method="post">
+                    <div class="form-group">
+                      <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="..."></textarea>
+                    </div>
+                    <button class="btn btn-round btn-d" type="submit">Envoyer l'avis</button>
+                  </form>
+                </div>
                 <div class="comments">
-                  <h4 class="comment-title font-alt">Il y a $comment$ commentaire(s).</h4>
+                  <h4 class="comment-title font-alt">Avis utlisateurs :</h4>
                   <div class="comment clearfix">
                     <div class="comment-avatar"><img src="https://images.rtl.fr/~c/880v587/rtl/www/1449859-shrek-dans-shrek-4-il-etait-une-fin.jpg" alt="avatar"/></div>
                     <div class="comment-content clearfix">
@@ -113,46 +132,37 @@
                     </div>
                   </div>
                 </div>
-                <div class="comment-form">
-                  <h4 class="comment-form-title font-alt">Poster un commentaire</h4>
-                  <form method="post">
-                    <div class="form-group">
-                      <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Commentaire ..."></textarea>
-                    </div>
-                    <button class="btn btn-round btn-d" type="submit">Envoyer le commentaire</button>
-                  </form>
-                </div>
               </div>
               <div class="col-sm-4 col-md-3 col-md-offset-1 sidebar">                
                 <div class="widget">
-                  <h5 class="widget-title font-alt">Pourrait aussi vous plaire ...</h5>
+                  <h5 class="widget-title font-alt">Pourrait vous plaire :</h5>
                   <ul class="widget-posts">
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
                         <div class="widget-posts-title"><a href="#">Jeu 1</a></div>
-                        <div class="widget-posts-meta">developpeur</div>
+                        <div class="widget-posts-meta"><a href="#">$dev$</a></div>
                       </div>
                     </li>
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
                         <div class="widget-posts-title"><a href="#">jeu 2</a></div>
-                        <div class="widget-posts-meta">developpeur</div>
+                        <div class="widget-posts-meta"><a href="#">$dev$</a></div>
                       </div>
                     </li>
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-3.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
                         <div class="widget-posts-title"><a href="#">jeu 3</a></div>
-                        <div class="widget-posts-meta">developpeur</div>
+                        <div class="widget-posts-meta"><a href="#">$dev$</a></div>
                       </div>
                     </li>
                     <li class="clearfix">
                       <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-4.jpg" alt="Post Thumbnail"/></a></div>
                       <div class="widget-posts-body">
                         <div class="widget-posts-title"><a href="#">jeu 4</a></div>
-                        <div class="widget-posts-meta">developpeur</div>
+                        <div class="widget-posts-meta"><a href="#">$dev$</a></div>
                       </div>
                     </li>
                   </ul>

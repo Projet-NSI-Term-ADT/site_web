@@ -53,7 +53,6 @@
 			  
 			  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><img src="https://icon-library.com/images/default-user-icon/default-user-icon-13.jpg" width="20" height="20"></a>
                 <ul class="dropdown-menu">
-                  <li><a class="section-scroll" href="#login">Connexion</a></li>
                   <li><a class="section-scroll" href="profil.html">Profil</a></li>
                   <li><a class="section-scroll" href="contact.html">Contacter un admin</a></li>
                   <li><a href="equipe.html">Crédits</a></li>

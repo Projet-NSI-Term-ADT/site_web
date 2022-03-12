@@ -15,6 +15,6 @@ server_address = ("", PORT)
 handler.cgi_directories = ["/"]
 
 httpd = server(server_address, handler)
-webbrowser.open_new_tab(f"http://localhost:{str(PORT)}/index_login.py")
+webbrowser.open_new_tab(f"http://localhost:{str(PORT)}/admin.py")
 httpd = server(server_address, handler)
 httpd.serve_forever()

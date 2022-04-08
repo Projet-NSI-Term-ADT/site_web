@@ -3,23 +3,41 @@
 #sys.stdout.reconfigure(encoding='utf-8')
 from fonctions import *
 
+nombre_jeux= compter_jeux()
+
 html1="""
     <div class="main">
-        <section class="module">
           <div class="container">
-            <div class="row multi-columns-row post-columns">
+            <div class="well well-sm">
+                <h1>Jeux du moment</h1>
+                <div class="row multi-columns-row post-columns">
 """
 
 html2="""
     </div>
-            <div class="pagination font-alt"><a href="#"><i class="fa fa-angle-left"></i></a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#"><i class="fa fa-angle-right"></i></a></div>
+            <div class="alert alert-danger" role="alert"><h6><a href="navig_jeu.py">Plus</a></h6></div>
+            </div>
           </div>
-        </section>
+        <div class="container">
+            <div class="well well-sm">
+                <h1>D'autres jeux</h1>
+                <div class="row multi-columns-row post-columns">
 """
+
+html3="""
+                </div>
+            <div class="alert alert-danger" role="alert"><h6><a href="navig_jeu.py">Plus</a></h6></div>
+            </div>
+          </div>
+"""
+
 
 charger_header("Jeux")
 print(html1)
-for jeu in jeux:
-    charger_jeu_index(jeu)
+for i in range(4):
+    charger_jeu_index("test")
 print(html2)
+for i in range(4):
+    charger_jeu_index("test")
+print(html3)
 charger_footer()
